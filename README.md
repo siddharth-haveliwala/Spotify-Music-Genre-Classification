@@ -1,4 +1,4 @@
-# 🎧 Spotify Music Genre Classification & Recommendation Engine
+# 🎧 Spotify Music Genre Classification
 
 ## Project Overview
 This project presents a robust **predictive model** for classifying music tracks by their genre and generating highly personalized playlist recommendations. Leveraging a comprehensive dataset from **Spotify's API** and simulated **user browsing history**, this solution moves beyond traditional collaborative filtering to offer nuanced, content-based recommendations tailored to individual preferences and moods.
