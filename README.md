@@ -1,4 +1,4 @@
-# 🎧 Spotify Music Genre Classification
+# Spotify Music Genre Classification
 
 ## Project Overview
 This project presents a robust **predictive model** for classifying music tracks by their genre and generating highly personalized playlist recommendations. Leveraging a comprehensive dataset from **Spotify's API** and simulated **user browsing history**, this solution moves beyond traditional collaborative filtering to offer nuanced, content-based recommendations tailored to individual preferences and moods.
@@ -14,14 +14,14 @@ It serves as a strong demonstration of advanced machine learning techniques appl
 * **Data Sources:** Utilized a comprehensive dataset of music features (e.g., danceability, energy, acousticness) and top hits from 2000 to 2022 to train the final recommender.
 * **Personalization:** The final recommendation engine is driven by a model that predicts a user's likelihood of engaging with a track based on their inferred preferences from browsing data.
 
-## 📂 Repository Structure
+## Repository Structure
 
 | Directory/File | Purpose |
 | :--- | :--- |
 | `src/` | Contains all original **R scripts** for data cleaning, visualization, modeling, and evaluation. |
 | `docs/` | **Full Final Paper** (`FinalPaper.pdf`) with in-depth methodology, literature review, and results. |
 
-## 🛠️ Installation and Reproduction
+## Installation and Reproduction
 
 This project was developed using **R**.
 
@@ -39,7 +39,7 @@ This project was developed using **R**.
     > load("~/your_path/src/RData_FinalData.RData")
     ```
 
-## 🔬 Research Methodology
+## Research Methodology
 
 Our goal is to bridge the gap in existing music recommendation literature by proposing a predictive model that seamlessly integrates Spotify's track features with the potential of user browsing history for highly personalized playlist generation.
 
@@ -82,7 +82,7 @@ Our goal is to bridge the gap in existing music recommendation literature by pro
         * **Single Model:** Decision Tree
         * **Ensemble Models:** Extreme Gradient Boosting (**XGBoost**), **AdaBoost**, **Random Forest**, and **CatBoost** (specifically chosen for its excellence in handling categorical features).
 
-## 📈 Results & Key Findings 
+## Results & Key Findings 
 
 The model selection process was centered on maximizing the **recall** of individual genres and overall **accuracy** across the multi-class classification task. The results clearly identify **CatBoost** as the most promising predictive model.
 
@@ -108,7 +108,7 @@ The **CatBoost** algorithm, designed to handle categorical data efficiently, eme
 * **Bias Observation:** A key finding was the identification of **dataset bias**, particularly for the most populous genre (Pop), which can inflate the overall accuracy. This necessitates a more targeted strategy.
 * **Resolution:** By strategically focusing the model on the key genres (Pop, Hip Hop, Rock, and Other), we were able to **address the bias** and achieve an **acceptable level of accuracy** across the classes of interest, effectively solving the problem of high-specificity genre classification.
 
-## 🚀 Future Enhancements (Roadmap)
+## Future Enhancements (Roadmap)
 
 * **API Deployment:** Wrap the recommendation engine in a **REST API** (e.g., with Plumber in R or Flask/Django in Python) for real-time inference.
 * **User Interface:** Develop a simple web application using **Shiny** (R) to allow users to input preferences and receive live recommendations.
